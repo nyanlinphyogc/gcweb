@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404 — Page Not Found | Green Circle Co., Ltd.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0C3527;
+    --ink-deep: #061A14;
+    --leaf: #1E7A4A;
+    --leaf-bright: #2A9A5E;
+    --gold: #F5B82E;
+    --paper: #F4F9F4;
+    --muted: rgba(244, 249, 244, 0.72);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    font-family: 'Archivo', sans-serif;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(30, 122, 74, 0.22), transparent 55%),
+      radial-gradient(circle at 85% 85%, rgba(245, 184, 46, 0.08), transparent 40%),
+      linear-gradient(165deg, var(--ink-deep) 0%, var(--ink) 100%);
+    color: var(--paper);
+    line-height: 1.6;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .code {
+    font-size: clamp(4.5rem, 18vw, 7rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--gold);
+    margin-bottom: 8px;
+    text-shadow: 0 0 60px rgba(245, 184, 46, 0.25);
+  }
+
+  h1 {
+    font-size: clamp(1.35rem, 4vw, 1.75rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--muted);
+    margin-bottom: 36px;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn:hover { transform: translateY(-2px); }
+
+  .btn-primary {
+    background: var(--leaf);
+    color: var(--paper);
+    box-shadow: 0 8px 28px rgba(30, 122, 74, 0.35);
+  }
+
+  .btn-primary:hover { background: var(--leaf-bright); }
+
+  .btn-ghost {
+    border: 2px solid rgba(244, 249, 244, 0.28);
+    color: var(--paper);
+    background: transparent;
+  }
+
+  .btn-ghost:hover { border-color: var(--leaf); color: var(--paper); }
+
+  footer {
+    margin-top: 56px;
+    font-size: 0.82rem;
+    color: rgba(244, 249, 244, 0.45);
+    letter-spacing: 0.04em;
+  }
+
+  footer a {
+    color: var(--leaf-bright);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  footer a:hover { text-decoration: underline; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn { transition: none; }
+    .btn:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="code" aria-hidden="true">404</div>
+  <h1>404 — Page Not Found</h1>
+  <p>
+    The page you're looking for may have moved, been removed, or never existed.
+    Let's get you back to something refreshing.
+  </p>
+  <div class="actions">
+    <a class="btn btn-primary" href="index.html">Back to home</a>
+    <a class="btn btn-ghost" href="index.html#products">Explore our brands</a>
+  </div>
+</main>
+<footer>
+  Green Circle Co., Ltd. · <a href="index.html#contact">Contact us</a>
+</footer>
+</body>
+</html>
